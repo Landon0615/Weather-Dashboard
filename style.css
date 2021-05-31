@@ -1,17 +1,62 @@
-.title {
-  display: flex;
-    
-    justify-content: center;
-   
+
+
+.tile{
+    font-size: 40px;
+    color: rgb(62, 0, 119);
+    text-align: center;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
 }
-.display {
-    display: flex;
-    -ms-flex-align: end;
-}
-#search {
-    display: flex;
-    -ms-flex-align: start;
+.list-group {
+    font-size: 40px;
+    color: rgb(62, 0, 119);
+    text-align: center;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
 }
 .name {
 font-size: 200%;
 }
+.card-main{
+    font-size: 40px;
+    color: rgb(62, 0, 119);
+    text-align: center;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+}
+.card1,.card2,.card3,.card4,.card5 {
+    border-style: groove;
+    border-radius: 10%;
+    font-size: 20px;
+    color: rgb(62, 0, 119);
+    text-align: center;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+}
+html{
+    background-image: url("https://openweather.co.uk/storage/app/media/we-are-pleased-announce-our-new-statistical-weather-data-api-now-available.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+input{
+    background-color: black;
+    font-size: 100%;
+    color: rgb(62, 0, 119);
+    text-align: center;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+}
+.button {
+    background-color:blue;
+    color: rgb(62, 0, 119);
+    text-align: center;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+}
+.s{
+    font-size: 45%;
+    background-color: blue;
+    color:rgb(62, 0, 119);
+    text-align: center;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+}
+
+
+

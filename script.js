@@ -3,6 +3,8 @@ let name = document.querySelector(".name");
 let date = document.querySelector(".date");
 let fiveDate = document.querySelector(".fiveDate");
 let searchHistory;
+let card;
+
 //Search for city submit button
 button.addEventListener("click", function () {
   let inputValue = document.querySelector(".inputValue").value;
@@ -88,43 +90,144 @@ function fiveDayForecast(cityName) {
       let filteredArr = dataArr.filter((index) =>
         index["dt_txt"].includes("12:00:00")
       );
-      for (let i = 0; i < filteredArr.length; i++) {
-        let forecastDay = filteredArr[i];
-        let dayData = formatDayOfWeek(forecastDay);
-        let dayList = document.createElement("p");
-        let dayContentList = document.createElement("p");
-        moment.unix(dayData.fiveDayDate).format("dddd, MMMM Do YYYY");
-        let fTemp = document.createTextNode(dayData.fiveDayTemp + "°F");
-        let fWind = document.createTextNode(
-          "Wind Speed: " + dayData.fiveDayWind + "mph"
-        );
-        let fHumidity = document.createTextNode(
-          "Humidity: " + dayData.fiveDayHumidity + "%"
-        );
-        let fIcon = document.createTextNode(
-          "http://openweathermap.org/img/wn/" + dayData.fiveIconValue + ".png"
-        );
-        console.log(filteredArr);
-        dayContentList.appendChild(fTemp);
-        dayContentList.appendChild(dayList);
-        const currentDiv = document.getElementById("div1");
-        document.body.insertBefore(dayList, currentDiv);
 
-        console.log(JSON.stringify(forecastDay));
+        let fiveDayTemp = filteredArr[0]["main"]["temp"];
+        let fiveDayDate = filteredArr[0]["dt"];
+        let fiveDayWind = filteredArr[0]["wind"]["speed"];
+        let fiveDayHumidity = filteredArr[0]["main"]["humidity"];
+        let fiveIconValue = filteredArr[0]["weather"][0]["icon"];
+        
+
+        document.querySelector(".fiveTemp").innerText = fiveDayTemp + "°F";
+
+        document.querySelector(".fiveDate").innerText = moment
+        .unix(fiveDayDate)
+        .format("dddd, MMMM Do YYYY");
+
+
+        document.querySelector(".fiveWind").innerText =
+          "Wind Speed: " + fiveDayWind + "mph";
+
+
+        document.querySelector(".fiveHumidity").innerText =
+          "Humidity: " + fiveDayHumidity + "%";
+
+
+
+        document.querySelector(".fiveIcon").src =
+          "http://openweathermap.org/img/wn/" + fiveIconValue + ".png";
+
+
+          let fiveDayTemp1 = filteredArr[1]["main"]["temp"];
+          let fiveDayDate1 = filteredArr[1]["dt"];
+          let fiveDayWind1 = filteredArr[1]["wind"]["speed"];
+          let fiveDayHumidity1 = filteredArr[1]["main"]["humidity"];
+          let fiveIconValue1 = filteredArr[1]["weather"][0]["icon"];
+          
+  
+          document.querySelector(".fiveTemp1").innerText = fiveDayTemp1 + "°F";
+  
+          document.querySelector(".fiveDate1").innerText = moment
+          .unix(fiveDayDate1)
+          .format("dddd, MMMM Do YYYY");
+  
+  
+          document.querySelector(".fiveWind1").innerText =
+            "Wind Speed: " + fiveDayWind1 + "mph";
+  
+  
+          document.querySelector(".fiveHumidity1").innerText =
+            "Humidity: " + fiveDayHumidity1 + "%";
+  
+  
+  
+          document.querySelector(".fiveIcon1").src =
+            "http://openweathermap.org/img/wn/" + fiveIconValue1 + ".png";
+            let fiveDayTemp2 = filteredArr[2]["main"]["temp"];
+            let fiveDayDate2 = filteredArr[2]["dt"];
+            let fiveDayWind2 = filteredArr[2]["wind"]["speed"];
+            let fiveDayHumidity2 = filteredArr[2]["main"]["humidity"];
+            let fiveIconValue2 = filteredArr[2]["weather"][0]["icon"];
+            
+    
+            document.querySelector(".fiveTemp2").innerText = fiveDayTemp2 + "°F";
+    
+            document.querySelector(".fiveDate2").innerText = moment
+            .unix(fiveDayDate2)
+            .format("dddd, MMMM Do YYYY");
+    
+    
+            document.querySelector(".fiveWind2").innerText =
+              "Wind Speed: " + fiveDayWind2 + "mph";
+    
+    
+            document.querySelector(".fiveHumidity2").innerText =
+              "Humidity: " + fiveDayHumidity2 + "%";
+    
+    
+    
+            document.querySelector(".fiveIcon2").src =
+              "http://openweathermap.org/img/wn/" + fiveIconValue2 + ".png";
+    
+    
+              let fiveDayTemp3 = filteredArr[3]["main"]["temp"];
+              let fiveDayDate3 = filteredArr[3]["dt"];
+              let fiveDayWind3 = filteredArr[3]["wind"]["speed"];
+              let fiveDayHumidity3 = filteredArr[3]["main"]["humidity"];
+              let fiveIconValue3 = filteredArr[3]["weather"][0]["icon"];
+              
+      
+              document.querySelector(".fiveTemp3").innerText = fiveDayTemp3 + "°F";
+      
+              document.querySelector(".fiveDate3").innerText = moment
+              .unix(fiveDayDate3)
+              .format("dddd, MMMM Do YYYY");
+      
+      
+              document.querySelector(".fiveWind3").innerText =
+                "Wind Speed: " + fiveDayWind3 + "mph";
+      
+      
+              document.querySelector(".fiveHumidity3").innerText =
+                "Humidity: " + fiveDayHumidity3 + "%";
+      
+      
+      
+              document.querySelector(".fiveIcon3").src =
+                "http://openweathermap.org/img/wn/" + fiveIconValue3 + ".png";
+
+                let fiveDayTemp4 = filteredArr[4]["main"]["temp"];
+                let fiveDayDate4 = filteredArr[4]["dt"];
+                let fiveDayWind4 = filteredArr[4]["wind"]["speed"];
+                let fiveDayHumidity4 = filteredArr[4]["main"]["humidity"];
+                let fiveIconValue4 = filteredArr[4]["weather"][0]["icon"];
+                
+        
+                document.querySelector(".fiveTemp4").innerText = fiveDayTemp4 + "°F";
+        
+                document.querySelector(".fiveDate4").innerText = moment
+                .unix(fiveDayDate4)
+                .format("dddd, MMMM Do YYYY");
+        
+        
+                document.querySelector(".fiveWind4").innerText =
+                  "Wind Speed: " + fiveDayWind4 + "mph";
+        
+        
+                document.querySelector(".fiveHumidity4").innerText =
+                  "Humidity: " + fiveDayHumidity4 + "%";
+        
+        
+        
+                document.querySelector(".fiveIcon4").src =
+                  "http://openweathermap.org/img/wn/" + fiveIconValue4 + ".png";
+})
+
       }
-    });
-}
-function formatDayOfWeek(forecastDay) {
-  let fiveDayTemp = forecastDay["main"]["temp"];
-  let fiveDayDate = forecastDay["dt"];
-  let fiveDayWind = forecastDay["wind"]["speed"];
-  let fiveDayHumidity = forecastDay["main"]["humidity"];
-  let fiveIconValue = forecastDay["weather"][0]["icon"];
-  return {
-    fiveDayTemp,
-    fiveDayDate,
-    fiveDayWind,
-    fiveDayHumidity,
-    fiveIconValue,
-  };
-}
+    
+
+
+    
+    
+
+
