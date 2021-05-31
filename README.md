@@ -5,3 +5,9 @@ This is a weather APP to provide current weather conditions for the inputed city
 
 
 
+<img width="1792" alt="Screen Shot 2021-05-30 at 11 37 12 PM" src="https://user-images.githubusercontent.com/80728975/120145027-22efc880-c1a0-11eb-87b7-fffb1f10e610.png">
+
+
+
+
+[Weather]
