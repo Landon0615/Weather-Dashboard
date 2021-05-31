@@ -10,65 +10,66 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <header>
-    <section class="hero is-small is-primary">
-      <div class="hero-body">
+  <body>
+  <header class="hero is-small is-primary">
+          <div class="hero-body">
         <p class="title">Weather Dashboard</p>
       </div>
-    </section>
-  </header>
-  <body>
-    <div
-      class="
-        columns
-        is-variable
-        is-1-mobile
-        is-0-tablet
-        is-3-desktop
-        is-8-widescreen
-        is-2-fullhd
-      "
-    >
-      <div class="column is-one-quarter">
-        <div class="column">
-          <p>   Search For A City:  </p>
-              <div class="input">
-              <input type="text" class="inputValue">
-              <input type="submit" value="Submit" class="button">
+      </header>
+        <div class="tile is-parent is-one-quarter">
+          <div  class="columns">
+            <p>   Search For A City:  </p>
+            <input type="text" class="inputValue"></input>
+            <input type="submit" value="Submit" class="button"></input>
+          </div>
+          
+                      <ul class="list-group ">
+              <p class="search-history">Search History</p>
+                <li>
+                </li>
+                <div class="column is-4">
+                  <div class="card">
+                    <div class="card-image">
+                      <figure class="image is">
+                        <img  src="" alt="" class="icon" />
+                                        <div class="card-content1">
+                      <div class="media">
+                        <div class="media-content1">
+              <p class="name"> </p>
+              <p class="date"> </p>
+              <p class="temp"> </p>
+              <p class="wind"> </p>
+              <p class="UV"> </p>
+            </div>
           </div>
         </div>
-      </div>
-        <div class="display">
-          <div class="column is-full">
-          <div class="tile is-parent is-8">
-            <article class="tile is-child box">
-            <p class="name">
-              
-            </p>
-            <p class="date">
-              
-            </p>
-            <p class="temp">
-             
-          </p>
-          <p class="wind">
-              
-          </p>
-          <p class="UV">
-           
-        </p>
         </div>
+      </figure>
       </div>
-          </article>
-          <div class="columns">
-              <!-- <div class="is-child"> -->
-
-   
-    
-    <script src="./script.js"></script>
+        </div>
+  </div>
+                <div class="column is-2">
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img src="" alt="" class="fiveIcon" />
+                    </figure>
+                  </div>
+                  <div id="div1" class="card-content">
+                    <div class="media-content">
+                        <p class="fiveTemp"> </p>
+                        <p class="fiveWind"> </p>
+                        <p class="fiveHumidity"></p>
+                        <p class="fiveDate"> </p>
+                        <p class="title is-4"></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  </body>
+    <script src="./script.js"></script>
+      </body>
 </html>
 

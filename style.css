@@ -1,0 +1,17 @@
+.title {
+  display: flex;
+    
+    justify-content: center;
+   
+}
+.display {
+    display: flex;
+    -ms-flex-align: end;
+}
+#search {
+    display: flex;
+    -ms-flex-align: start;
+}
+.name {
+font-size: 200%;
+}
