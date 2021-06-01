@@ -42,7 +42,7 @@ let printHistory = function () {
 //API call to print data on button click
 function currentWeather(cityName) {
   fetch(
-    `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=f4048cf303566008248577ccd1cef8a8&units=imperial`
+    `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=f4048cf303566008248577ccd1cef8a8&units=imperial`
   )
     .then((response) => response.json())
     .then((data) => {
@@ -58,7 +58,7 @@ function currentWeather(cityName) {
       document.querySelector(".wind").innerText =
         "Wind Speed: " + windValue + "mph";
       document.querySelector(".icon").src =
-        "http://openweathermap.org/img/wn/" + iconValue + ".png";
+        "https://openweathermap.org/img/wn/" + iconValue + ".png";
 
       getUvIndex(lat, lon);
     })
@@ -115,7 +115,7 @@ function fiveDayForecast(cityName) {
 
 
         document.querySelector(".fiveIcon").src =
-          "http://openweathermap.org/img/wn/" + fiveIconValue + ".png";
+          "https://openweathermap.org/img/wn/" + fiveIconValue + ".png";
 
 
           let fiveDayTemp1 = filteredArr[1]["main"]["temp"];
@@ -142,7 +142,7 @@ function fiveDayForecast(cityName) {
   
   
           document.querySelector(".fiveIcon1").src =
-            "http://openweathermap.org/img/wn/" + fiveIconValue1 + ".png";
+            "https://openweathermap.org/img/wn/" + fiveIconValue1 + ".png";
             let fiveDayTemp2 = filteredArr[2]["main"]["temp"];
             let fiveDayDate2 = filteredArr[2]["dt"];
             let fiveDayWind2 = filteredArr[2]["wind"]["speed"];
@@ -167,7 +167,7 @@ function fiveDayForecast(cityName) {
     
     
             document.querySelector(".fiveIcon2").src =
-              "http://openweathermap.org/img/wn/" + fiveIconValue2 + ".png";
+              "https://openweathermap.org/img/wn/" + fiveIconValue2 + ".png";
     
     
               let fiveDayTemp3 = filteredArr[3]["main"]["temp"];
@@ -194,7 +194,7 @@ function fiveDayForecast(cityName) {
       
       
               document.querySelector(".fiveIcon3").src =
-                "http://openweathermap.org/img/wn/" + fiveIconValue3 + ".png";
+                "https://openweathermap.org/img/wn/" + fiveIconValue3 + ".png";
 
                 let fiveDayTemp4 = filteredArr[4]["main"]["temp"];
                 let fiveDayDate4 = filteredArr[4]["dt"];
@@ -220,7 +220,7 @@ function fiveDayForecast(cityName) {
         
         
                 document.querySelector(".fiveIcon4").src =
-                  "http://openweathermap.org/img/wn/" + fiveIconValue4 + ".png";
+                  "https://openweathermap.org/img/wn/" + fiveIconValue4 + ".png";
 })
 
       }
